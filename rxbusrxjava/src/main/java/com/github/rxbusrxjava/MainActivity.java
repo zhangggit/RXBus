@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         //去重复
         distinct();
     }
-
+    //去重复
     private void distinct() {
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
@@ -49,9 +49,8 @@ public class MainActivity extends AppCompatActivity {
                         Log.e(TAG, "accept: " + integer);
                     }
                 });
-
     }
-
+    //接收指定的事件
     private void filter() {
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
@@ -102,8 +101,6 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
-
-
     }
 
     //点击请求数据
